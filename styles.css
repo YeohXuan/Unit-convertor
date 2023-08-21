@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla&family=Poppins&display=swap');
+body{
+    background-color: rgb(4, 9, 75);
+    font-family: 'Inter', sans-serif;
+}
+#title{
+    font-weight: bold;
+    color: white;
+}
+#main{
+    width: 648px;
+    margin: 60px auto;
+    text-align: center;
+    color: white;
+}
+.fa-solid {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+#upper{
+    background-color: #6943FF;
+    padding: 20px;
+    margin-bottom: none;
+}
+#unit-input {
+    width: 117px;
+    height: 83px;
+    border: 2.5px solid #B295FF;
+    background-color: transparent;
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+
+}
+#convert-btn {
+    display: block;
+    margin:  28px auto;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 122px;
+    height: 42px;
+    font-size: 17.5px;
+    cursor: pointer;
+}
+#lower {
+    background-color: #09244a;
+    color: #CCC1FF;
+    padding: 20px 10px;
+    margin-top: none;
+}
+.el {
+    background-color: #273549;
+    width: 570px;
+    height: 110px;
+    margin: auto;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px;
+    margin: 20px;
+}
+.conversions {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.light-mode #lower {
+    background-color: #F4F4F4;
+    color: #5A537B;
+}
+.light-mode .el {
+    background-color: #FFFFFF;
+}
