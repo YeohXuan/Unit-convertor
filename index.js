@@ -4,6 +4,7 @@ const lengthConversion = document.getElementById("length-conversion")
 const volumeConversion = document.getElementById("volume-conversion")
 const massConversion = document.getElementById("mass-conversion")
 const speedConversion = document.getElementById("speed-conversion")
+const tempConversion = document.getElementById("temp-conversion")
 
 convertBtn.addEventListener("click", () => {
     const input = unitInput.value 
@@ -13,6 +14,12 @@ convertBtn.addEventListener("click", () => {
     const milesToKm = (input * 1.60934).toFixed(3)
     //Display speed conversion
     speedConversion.textContent = `${input} km = ${kmToMiles} miles | ${input} miles = ${milesToKm} km`
+
+    //Temperature formula
+    const celsiusToFahrenheit = ((input * 9/5) + 32).toFixed(3)
+    const fahrenheitToCelsius = ((input - 32) * 5/9).toFixed(3)
+    //Display speed conversion
+    tempConversion.textContent = `${input}°C = ${celsiusToFahrenheit}°F | ${input}°F = ${fahrenheitToCelsius}°C`
 
     //Length formula
     const meterToFeet = (input * 3.28084).toFixed(3)
